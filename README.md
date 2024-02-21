@@ -47,3 +47,11 @@ sudo apt install golang
 ```
 ##### Install Nvidia CUDA cuDNN TensorRT
 refer to [https://github.com/countsp/ubuntu_settings/blob/main/nvidia.md](https://github.com/countsp/ubuntu_settings/blob/main/nvidia.md)
+
+##### 
+rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
+失败
+则sudo apt-get install ros-galactic-${missing-package}
+例如：
+sudo apt-get install ros-galactic-osrf-testing-tools-cpp
+
