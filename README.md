@@ -5,39 +5,39 @@ For Autoware's general documentation, see [Autoware Documentation](https://autow
 For detailed documents of Autoware Universe components, see [Autoware Universe Documentation](https://autowarefoundation.github.io/autoware.universe/).
 
 ---
-Source installation#
-Prerequisites#
+### Source installation
 
-    OS
-        Ubuntu 20.04
+#### Prerequisites
+Ubuntu 20.04
 
-    ROS
-        ROS 2 Galactic
-
-    For ROS 2 system dependencies, refer to REP-2000.
-
-    Git
-        Registering SSH keys to GitHub is preferable.
-
+ROS 2 Galactic
+   
+```
 sudo apt-get -y update
 sudo apt-get -y install git
+```
 
-How to set up a development environment#
+How to set up a development environment
 
-    Clone autowarefoundation/autoware and move to the directory.
+Clone autowarefoundation/autoware and move to the directory.
 
-    git clone https://github.com/autowarefoundation/autoware.git -b galactic
-    cd autoware
+```
+git clone https://github.com/autowarefoundation/autoware.git -b galactic
+cd autoware
+```
+or download zip file using galactic branch 
 
-    You can install the dependencies either manually or using the provided Ansible script.
+You can install the dependencies either manually or using the provided Ansible script.
 
-    Note: Before installing NVIDIA libraries, confirm and agree with the licenses.
+Note: Before installing NVIDIA libraries, confirm and agree with the licenses.
 
-    CUDA
-    cuDNN
-    TensorRT
+**CUDA**
 
-Installing dependencies manually#
+**cuDNN**
+    
+**TensorRT**
+
+##### Installing dependencies manually
 
     Install ROS 2
     Install ROS 2 Dev Tools
@@ -49,7 +49,7 @@ Installing dependencies manually#
     Install Nvidia CUDA
     Install Nvidia cuDNN and TensorRT
 
-Installing dependencies using Ansible#
+##### Installing dependencies using Ansible(optional)
 
 Be very careful with this method. Make sure you read and confirmed all the steps in the Ansible configuration before using it.
 
@@ -57,7 +57,7 @@ If you've manually installed the dependencies, you can skip this section.
 ```
 ./setup-dev-env.sh
 ```
-How to set up a workspace#
+##### How to set up a workspace
 
     Create the src directory and clone repositories into it.
 
@@ -74,15 +74,15 @@ Autoware requires some ROS 2 packages in addition to the core components. The to
 source /opt/ros/galactic/setup.bash
 rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
 ```
-Build the workspace.
+##### Build the workspace.
 
 Autoware uses colcon to build workspaces. For more advanced options, refer to the documentation.
 ```
 colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
-    If there is any build issue, refer to Troubleshooting.
+    
 
-How to update a workspace#
+##### How to update a workspace(optional)
 
     Update the .repos file.
 ```
@@ -159,10 +159,14 @@ sudo apt install golang
 ##### Install Nvidia CUDA cuDNN TensorRT
 refer to [https://github.com/countsp/ubuntu_settings/blob/main/nvidia.md](https://github.com/countsp/ubuntu_settings/blob/main/nvidia.md)
 
-##### 
-rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
-失败
-则sudo apt-get install ros-galactic-${missing-package}
+##### 报错
+rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO 失败
+
+则 sudo apt-get install ros-galactic-${missing-package}
+
 例如：
+
 sudo apt-get install ros-galactic-osrf-testing-tools-cpp
+
+（osrf_testing-tools-cpp报错不影响使用）
 
