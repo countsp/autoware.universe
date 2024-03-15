@@ -5,6 +5,117 @@ For Autoware's general documentation, see [Autoware Documentation](https://autow
 For detailed documents of Autoware Universe components, see [Autoware Universe Documentation](https://autowarefoundation.github.io/autoware.universe/).
 
 ---
+Source installation#
+Prerequisites#
+
+    OS
+        Ubuntu 20.04
+
+    ROS
+        ROS 2 Galactic
+
+    For ROS 2 system dependencies, refer to REP-2000.
+
+    Git
+        Registering SSH keys to GitHub is preferable.
+
+sudo apt-get -y update
+sudo apt-get -y install git
+
+How to set up a development environment#
+
+    Clone autowarefoundation/autoware and move to the directory.
+
+    git clone https://github.com/autowarefoundation/autoware.git -b galactic
+    cd autoware
+
+    You can install the dependencies either manually or using the provided Ansible script.
+
+    Note: Before installing NVIDIA libraries, confirm and agree with the licenses.
+
+    CUDA
+    cuDNN
+    TensorRT
+
+Installing dependencies manually#
+
+    Install ROS 2
+    Install ROS 2 Dev Tools
+    Install the RMW Implementation
+    Install pacmod
+    Install Autoware Core dependencies
+    Install Autoware Universe dependencies
+    Install pre-commit dependencies
+    Install Nvidia CUDA
+    Install Nvidia cuDNN and TensorRT
+
+Installing dependencies using Ansible#
+
+Be very careful with this method. Make sure you read and confirmed all the steps in the Ansible configuration before using it.
+
+If you've manually installed the dependencies, you can skip this section.
+```
+./setup-dev-env.sh
+```
+How to set up a workspace#
+
+    Create the src directory and clone repositories into it.
+
+    Autoware uses vcstool to construct workspaces.
+```
+cd autoware
+mkdir src
+vcs import src < autoware.repos
+```
+Install dependent ROS packages.
+
+Autoware requires some ROS 2 packages in addition to the core components. The tool rosdep allows an automatic search and installation of such dependencies. You might need to run rosdep update before rosdep install.
+```
+source /opt/ros/galactic/setup.bash
+rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
+```
+Build the workspace.
+
+Autoware uses colcon to build workspaces. For more advanced options, refer to the documentation.
+```
+colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
+```
+    If there is any build issue, refer to Troubleshooting.
+
+How to update a workspace#
+
+    Update the .repos file.
+```
+cd autoware
+git pull
+```
+Update the repositories.
+```
+vcs import src < autoware.repos
+vcs pull src
+```
+For Git users:
+
+    vcs import is similar to git checkout.
+        Note that it doesn't pull from the remote.
+    vcs pull is similar to git pull.
+        Note that it doesn't switch branches.
+
+For more information, refer to the official documentation.
+
+Install dependent ROS packages.
+
+```
+source /opt/ros/galactic/setup.bash
+rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
+```
+
+Build the workspace.
+```
+colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
+```
+
+---
 
 ### installation
 reference: [https://autowarefoundation.github.io/autoware-documentation/galactic/installation/autoware/source-installation/](https://autowarefoundation.github.io/autoware-documentation/galactic/installation/autoware/source-installation/)
