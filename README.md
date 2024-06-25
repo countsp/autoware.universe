@@ -54,19 +54,30 @@ Note: Before installing NVIDIA libraries, confirm and agree with the licenses.
 Be very careful with this method. Make sure you read and confirmed all the steps in the Ansible configuration before using it.
 
 If you've manually installed the dependencies, you can skip this section.
+
 ```
 ./setup-dev-env.sh
 ```
+
+
 ##### How to set up a workspace
 
-    Create the src directory and clone repositories into it.
+Create the src directory and clone repositories into it.
 
-    Autoware uses vcstool to construct workspaces.
+Autoware uses vcstool to construct workspaces.
+
 ```
 cd autoware
 mkdir src
 vcs import src < autoware.repos
 ```
+
+
+Install vcs command
+```
+sudo apt install python3-vcstool
+```
+
 Install dependent ROS packages.
 
 Autoware requires some ROS 2 packages in addition to the core components. The tool rosdep allows an automatic search and installation of such dependencies. You might need to run rosdep update before rosdep install.
