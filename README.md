@@ -36,23 +36,15 @@ cd autoware
 or download zip file using galactic branch 
 
 
-###  Installing dependencies manually
-
-Install ROS 2
-Install ROS 2 Dev Tools
-Install the RMW Implementation
-Install pacmod
-Install Autoware Core dependencies
-Install Autoware Universe dependencies
-Install pre-commit dependencies
-Install Nvidia CUDA
-Install Nvidia cuDNN and TensorRT
 
 ---
 
 ### installation
 reference: [https://autowarefoundation.github.io/autoware-documentation/galactic/installation/autoware/source-installation/](https://autowarefoundation.github.io/autoware-documentation/galactic/installation/autoware/source-installation/)
 -> Installing dependencies manually
+
+##### Install ROS 2
+using fishros
 
 ##### Install the RMW Implementation
 ```wget -O /tmp/amd64.env https://raw.githubusercontent.com/autowarefoundation/autoware/main/amd64.env && source /tmp/amd64.env
