@@ -7,7 +7,8 @@ For detailed documents of Autoware Universe components, see [Autoware Universe D
 ---
 ### Source installation
 
-#### Prerequisites
+### Prerequisites
+
 Ubuntu 20.04
 
 ROS 2 Galactic
@@ -17,7 +18,7 @@ sudo apt-get -y update
 sudo apt-get -y install git
 ```
 
-How to set up a development environment
+### How to set up a development environment
 
 Clone autowarefoundation/autoware and move to the directory.
 
@@ -27,9 +28,6 @@ cd autoware
 ```
 or download zip file using galactic branch 
 
-You can install the dependencies either manually or using the provided Ansible script.
-
-Note: Before installing NVIDIA libraries, confirm and agree with the licenses.
 
 **CUDA**
 
@@ -39,92 +37,15 @@ Note: Before installing NVIDIA libraries, confirm and agree with the licenses.
 
 ##### Installing dependencies manually
 
-    Install ROS 2
-    Install ROS 2 Dev Tools
-    Install the RMW Implementation
-    Install pacmod
-    Install Autoware Core dependencies
-    Install Autoware Universe dependencies
-    Install pre-commit dependencies
-    Install Nvidia CUDA
-    Install Nvidia cuDNN and TensorRT
-
-##### Installing dependencies using Ansible(optional)
-
-Be very careful with this method. Make sure you read and confirmed all the steps in the Ansible configuration before using it.
-
-If you've manually installed the dependencies, you can skip this section.
-
-```
-./setup-dev-env.sh
-```
-
-
-##### How to set up a workspace
-
-Create the src directory and clone repositories into it.
-
-Autoware uses vcstool to construct workspaces.
-
-```
-cd autoware
-mkdir src
-vcs import src < autoware.repos
-```
-
-
-Install vcs command
-```
-sudo apt install python3-vcstool
-```
-
-Install dependent ROS packages.
-
-Autoware requires some ROS 2 packages in addition to the core components. The tool rosdep allows an automatic search and installation of such dependencies. You might need to run rosdep update before rosdep install.
-```
-source /opt/ros/galactic/setup.bash
-rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
-```
-##### Build the workspace.
-
-Autoware uses colcon to build workspaces. For more advanced options, refer to the documentation.
-```
-colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
-```
-    
-
-##### How to update a workspace(optional)
-
-    Update the .repos file.
-```
-cd autoware
-git pull
-```
-Update the repositories.
-```
-vcs import src < autoware.repos
-vcs pull src
-```
-For Git users:
-
-    vcs import is similar to git checkout.
-        Note that it doesn't pull from the remote.
-    vcs pull is similar to git pull.
-        Note that it doesn't switch branches.
-
-For more information, refer to the official documentation.
-
-Install dependent ROS packages.
-
-```
-source /opt/ros/galactic/setup.bash
-rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
-```
-
-Build the workspace.
-```
-colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
-```
+Install ROS 2
+Install ROS 2 Dev Tools
+Install the RMW Implementation
+Install pacmod
+Install Autoware Core dependencies
+Install Autoware Universe dependencies
+Install pre-commit dependencies
+Install Nvidia CUDA
+Install Nvidia cuDNN and TensorRT
 
 ---
 
@@ -253,3 +174,36 @@ probabilistic_occupancy_grid_map: Cannot locate rosdep definition for [pcl_ros]
 planning_error_monitor: Cannot locate rosdep definition for [diagnostic_updater]
 
 ```
+
+##### How to set up a workspace
+
+Create the src directory and clone repositories into it.
+
+Autoware uses vcstool to construct workspaces.
+
+```
+cd autoware
+mkdir src
+vcs import src < autoware.repos
+```
+
+
+Install vcs command
+```
+sudo apt install python3-vcstool
+```
+
+Install dependent ROS packages.
+
+Autoware requires some ROS 2 packages in addition to the core components. The tool rosdep allows an automatic search and installation of such dependencies. You might need to run rosdep update before rosdep install.
+```
+source /opt/ros/galactic/setup.bash
+rosdep install -y --from-paths src --ignore-src --rosdistro $ROS_DISTRO
+```
+##### Build the workspace.
+
+Autoware uses colcon to build workspaces. For more advanced options, refer to the documentation.
+```
+colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
+```
+    
