@@ -176,9 +176,9 @@ sudo apt-get install ros-galactic-ros-testing
 sudo apt-get install ros-galactic-behaviortree-cpp-v3
 sudo apt-get install ros-galactic-usb-cam
 sudo apt-get install ros-galactic-nav2-msgs
-sudo apt-get install ros-galactic-lanelet2-validation
-sudo apt-get install ros-galactic-octomap
-sudo apt-get install ros-galactic-tvm-vendor
+sudo apt-get install ros-galactic-lanelet2-validation 
+sudo apt-get install ros-galactic-octomap 
+sudo apt-get install ros-galactic-tvm-vendor 
 sudo apt-get install ros-galactic-xacro
 sudo apt-get install ros-galactic-point-cloud-msg-wrapper
 sudo apt-get install ros-galactic-nav2-costmap-2d
