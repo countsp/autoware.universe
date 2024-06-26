@@ -167,7 +167,31 @@ probabilistic_occupancy_grid_map: Cannot locate rosdep definition for [pcl_ros]
 planning_error_monitor: Cannot locate rosdep definition for [diagnostic_updater]
 
 ```
+```
+sudo apt-get install ros-galactic-pcl-ros
+sudo apt-get install ros-galactic-radar-msgs
+sudo apt-get install ros-galactic-topic-tools
+sudo apt-get install ros-galactic-diagnostic-updater
+sudo apt-get install ros-galactic-ros-testing
+sudo apt-get install ros-galactic-behaviortree-cpp-v3
+sudo apt-get install ros-galactic-usb-cam
+sudo apt-get install ros-galactic-nav2-msgs
+sudo apt-get install ros-galactic-lanelet2-validation
+sudo apt-get install ros-galactic-octomap
+sudo apt-get install ros-galactic-tvm-vendor
+sudo apt-get install ros-galactic-xacro
+sudo apt-get install ros-galactic-point-cloud-msg-wrapper
+sudo apt-get install ros-galactic-nav2-costmap-2d
+sudo apt-get install ros-galactic-filters
+sudo apt-get install ros-galactic-tensorrt-cmake-module
+sudo apt-get install ros-galactic-osqp-vendor
+sudo apt-get install ros-galactic-osrf-testing-tools-cpp
+sudo apt-get install ros-galactic-octomap-msgs
+sudo apt-get install ros-galactic-rosbridge-server
+sudo apt-get install ros-galactic-geographic-msgs
+sudo apt-get install ros-galactic-rqt-robot-monitor
 
+```
 ##### How to set up a workspace
 
 Create the src directory and clone repositories into it.
