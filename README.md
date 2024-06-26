@@ -13,6 +13,13 @@ Ubuntu 20.04
 
 ROS 2 Galactic
    
+
+CUDA
+
+cuDNN
+
+TensorRT
+
 ```
 sudo apt-get -y update
 sudo apt-get -y install git
@@ -29,13 +36,7 @@ cd autoware
 or download zip file using galactic branch 
 
 
-**CUDA**
-
-**cuDNN**
-    
-**TensorRT**
-
-##### Installing dependencies manually
+###  Installing dependencies manually
 
 Install ROS 2
 Install ROS 2 Dev Tools
