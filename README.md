@@ -190,6 +190,18 @@ sudo apt-get install ros-galactic-octomap-msgs
 sudo apt-get install ros-galactic-rosbridge-server
 sudo apt-get install ros-galactic-geographic-msgs
 sudo apt-get install ros-galactic-rqt-robot-monitor
+sudo apt-get install ros-galactic-lanelet2-maps 
+sudo apt-get install ros-galactic-diagnostic-aggregator
+sudo apt-get install ros-galactic-rqt-runtime-monitor
+sudo apt-get install ros-galactic-cudnn-cmake-module 
+sudo apt-get install ros-galactic-ament-clang-format 
+sudo apt-get install librange-v3-dev
+sudo apt-get install libpcl-dev
+sudo apt-get install libfmt-dev 
+sudo apt-get install libcpprest-dev 
+sudo apt-get install libpcap-dev
+sudo apt-get install libcgal-dev
+
 
 ```
 ##### How to set up a workspace
