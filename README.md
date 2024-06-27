@@ -201,7 +201,7 @@ sudo apt-get install libfmt-dev
 sudo apt-get install libcpprest-dev 
 sudo apt-get install libpcap-dev
 sudo apt-get install libcgal-dev
-
+sudo apt-get install nlohmann-json3-dev
 
 ```
 ##### How to set up a workspace
