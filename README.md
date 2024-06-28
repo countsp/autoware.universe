@@ -45,7 +45,9 @@ reference: [https://autowarefoundation.github.io/autoware-documentation/galactic
 
 ##### Install ROS 2
 using fishros
-
+```
+wget http://fishros.com/install -O fishros && . fishros
+```
 ##### Install the RMW Implementation
 ```
 wget -O /tmp/amd64.env https://raw.githubusercontent.com/autowarefoundation/autoware/main/amd64.env && source /tmp/amd64.env
@@ -77,8 +79,7 @@ sudo geographiclib-get-geoids egm2008-1
 ```
 ##### Install pre-commit dependencies
 ```
-pre_commit_clang_format_version=17.0.6
-pip3 install pre-commit clang-format==${pre_commit_clang_format_version}
+pip3 install pre-commit clang-format==17.0.6
 sudo apt install golang
 ```
 ##### Install Nvidia CUDA cuDNN TensorRT
