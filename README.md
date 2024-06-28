@@ -202,7 +202,11 @@ libfmt-dev \
 libcpprest-dev \
 libpcap-dev \
 libcgal-dev \
-nlohmann-json3-dev
+nlohmann-json3-dev \
+ros-galactic-ublox-gps \
+ros-galactic-can-msgs \
+ros-galactic-pacmod3-msgs \
+
 
 
 ```
