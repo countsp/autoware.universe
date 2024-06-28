@@ -206,6 +206,11 @@ nlohmann-json3-dev \
 ros-galactic-ublox-gps \
 ros-galactic-can-msgs \
 ros-galactic-pacmod3-msgs \
+libopenni-dev \
+libopenni2-dev \
+libpcap-dev \
+libpng-dev \
+libusb-1.0-0-dev
 
 
 
