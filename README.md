@@ -168,40 +168,41 @@ planning_error_monitor: Cannot locate rosdep definition for [diagnostic_updater]
 
 ```
 ```
-sudo apt-get install ros-galactic-pcl-ros
-sudo apt-get install ros-galactic-radar-msgs
-sudo apt-get install ros-galactic-topic-tools
-sudo apt-get install ros-galactic-diagnostic-updater
-sudo apt-get install ros-galactic-ros-testing
-sudo apt-get install ros-galactic-behaviortree-cpp-v3
-sudo apt-get install ros-galactic-usb-cam
-sudo apt-get install ros-galactic-nav2-msgs
-sudo apt-get install ros-galactic-lanelet2-validation 
-sudo apt-get install ros-galactic-octomap 
-sudo apt-get install ros-galactic-tvm-vendor 
-sudo apt-get install ros-galactic-xacro
-sudo apt-get install ros-galactic-point-cloud-msg-wrapper
-sudo apt-get install ros-galactic-nav2-costmap-2d
-sudo apt-get install ros-galactic-filters
-sudo apt-get install ros-galactic-tensorrt-cmake-module
-sudo apt-get install ros-galactic-osqp-vendor
-sudo apt-get install ros-galactic-osrf-testing-tools-cpp
-sudo apt-get install ros-galactic-octomap-msgs
-sudo apt-get install ros-galactic-rosbridge-server
-sudo apt-get install ros-galactic-geographic-msgs
-sudo apt-get install ros-galactic-rqt-robot-monitor
-sudo apt-get install ros-galactic-lanelet2-maps 
-sudo apt-get install ros-galactic-diagnostic-aggregator
-sudo apt-get install ros-galactic-rqt-runtime-monitor
-sudo apt-get install ros-galactic-cudnn-cmake-module 
-sudo apt-get install ros-galactic-ament-clang-format 
-sudo apt-get install librange-v3-dev
-sudo apt-get install libpcl-dev
-sudo apt-get install libfmt-dev 
-sudo apt-get install libcpprest-dev 
-sudo apt-get install libpcap-dev
-sudo apt-get install libcgal-dev
-sudo apt-get install nlohmann-json3-dev
+sudo apt-get install -y ros-galactic-pcl-ros \
+ros-galactic-radar-msgs \
+ros-galactic-topic-tools \
+ros-galactic-diagnostic-updater \
+ros-galactic-ros-testing \
+ros-galactic-behaviortree-cpp-v3 \
+ros-galactic-usb-cam \
+ros-galactic-nav2-msgs \
+ros-galactic-lanelet2-validation \
+ros-galactic-octomap \
+ros-galactic-tvm-vendor \
+ros-galactic-xacro \
+ros-galactic-point-cloud-msg-wrapper \
+ros-galactic-nav2-costmap-2d \
+ros-galactic-filters \
+ros-galactic-tensorrt-cmake-module \
+ros-galactic-osqp-vendor \
+ros-galactic-osrf-testing-tools-cpp \
+ros-galactic-octomap-msgs \
+ros-galactic-rosbridge-server \
+ros-galactic-geographic-msgs \
+ros-galactic-rqt-robot-monitor \
+ros-galactic-lanelet2-maps \
+ros-galactic-diagnostic-aggregator \
+ros-galactic-rqt-runtime-monitor \
+ros-galactic-cudnn-cmake-module \
+ros-galactic-ament-clang-format \
+librange-v3-dev \
+libpcl-dev \
+libfmt-dev \
+libcpprest-dev \
+libpcap-dev \
+libcgal-dev \
+nlohmann-json3-dev
+
 
 ```
 ##### How to set up a workspace
