@@ -262,7 +262,7 @@ colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
 
 ## 报错
 
-**tensorrt-common 报错**  
+**1.tensorrt-common 报错**  
 -Werror=unused-parameter
 
 error: ‘IRNNv2Layer’ is deprecated [-Werror=deprecated-declarations]
@@ -276,7 +276,10 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-deprecated-declarations -Wno-unused
 ```
 
 
-**velodyne_pointcloud报错**
+**2.velodyne_pointcloud报错**
+
+**解决方案**
+
 在CMakeList 中加入
 
 ```
