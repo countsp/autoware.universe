@@ -253,4 +253,24 @@ Autoware uses colcon to build workspaces. For more advanced options, refer to th
 ```
 colcon build --symlink-install --cmake-args -DCMAKE_BUILD_TYPE=Release
 ```
-    
+
+
+
+
+
+---
+
+## 报错
+
+**tensorrt-common 报错**  
+-Werror=unused-parameter
+
+error: ‘IRNNv2Layer’ is deprecated [-Werror=deprecated-declarations]
+
+
+**解决方案**
+
+将以下内容添加到 tensorrt_common 包的 CMakeLists.txt 文件中。
+```
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-deprecated-declarations -Wno-unused-parameter")
+```
