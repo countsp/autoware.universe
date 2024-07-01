@@ -274,3 +274,11 @@ error: ‘IRNNv2Layer’ is deprecated [-Werror=deprecated-declarations]
 ```
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-deprecated-declarations -Wno-unused-parameter")
 ```
+
+
+**velodyne_pointcloud报错**
+在CMakeList 中加入
+
+```
+cmake_policy(SET CMP0074 NEW)
+```
