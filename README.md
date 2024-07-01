@@ -210,7 +210,10 @@ libopenni-dev \
 libopenni2-dev \
 libpcap-dev \
 libpng-dev \
-libusb-1.0-0-dev
+libusb-1.0-0-dev \
+libyaml-cpp-dev \
+pkg-config \
+libnl-genl-3-dev
 
 
 
