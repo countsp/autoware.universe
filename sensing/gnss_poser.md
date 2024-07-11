@@ -1,3 +1,6 @@
+可能缺少 autoware_sensing_msgs::msg::GnssInsOrientationStamped
+
+
 # 目的
 
 ## gnss_poser 是一个节点，用于订阅 GNSS 传感消息并计算带有协方差的车辆姿态。
