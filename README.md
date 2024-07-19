@@ -285,3 +285,44 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-deprecated-declarations -Wno-unused
 ```
 cmake_policy(SET CMP0074 NEW)
 ```
+**3.opencv报错**
+
+![Screenshot from 2024-07-19 08-48-27](https://github.com/user-attachments/assets/8438b6a6-e45a-467f-be96-689599f0b16a)
+
+```
+cmake_minimum_required(VERSION 3.14)
+project(traffic_light_map_based_detector)
+
+find_package(autoware_cmake REQUIRED)
+autoware_package()
+
+find_package(Eigen3 REQUIRED)
+find_package(OpenCV REQUIRED)
+find_package(cv_bridge REQUIRED)
+
+include_directories(
+  SYSTEM
+    ${EIGEN3_INCLUDE_DIR}
+    ${OpenCV_INCLUDE_DIRS}
+    ${cv_bridge_INCLUDE_DIRS}
+)
+
+ament_auto_add_library(traffic_light_map_based_detector SHARED
+  src/node.cpp
+)
+
+target_link_libraries(traffic_light_map_based_detector
+  ${OpenCV_LIBRARIES}
+  ${cv_bridge_LIBRARIES}
+)
+
+rclcpp_components_register_node(traffic_light_map_based_detector
+  PLUGIN "traffic_light::MapBasedDetector"
+  EXECUTABLE traffic_light_map_based_detector_node
+)
+
+ament_auto_package(INSTALL_TO_SHARE
+  launch
+  config
+)
+```
