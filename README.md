@@ -289,6 +289,8 @@ cmake_policy(SET CMP0074 NEW)
 
 ![Screenshot from 2024-07-19 08-48-27](https://github.com/user-attachments/assets/8438b6a6-e45a-467f-be96-689599f0b16a)
 
+看看哪个项目报错，搜索src中项目，并修改对应cmakelist，添加OpenCV 与 cv_bridge 
+
 ```
 cmake_minimum_required(VERSION 3.14)
 project(traffic_light_map_based_detector)
