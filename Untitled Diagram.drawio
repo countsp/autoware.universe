@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:126.0) Gecko/20100101 Firefox/126.0" version="24.7.12">
   <diagram name="Page-1" id="jYja321TO4npNnZUXKt9">
-    <mxGraphModel dx="825" dy="482" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1184" dy="691" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -208,7 +208,7 @@
             <mxPoint x="-52" y="12" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.59;exitY=1.004;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="qSpFAjaBa0g86qrWprOc-3">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.59;exitY=1.004;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="qSpFAjaBa0g86qrWprOc-3" target="qSpFAjaBa0g86qrWprOc-32">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="770" y="890" as="sourcePoint" />
             <mxPoint x="840" y="1050" as="targetPoint" />
@@ -275,6 +275,20 @@
         </mxCell>
         <mxCell id="qSpFAjaBa0g86qrWprOc-31" value="&lt;li&gt;处理来自传感器的点云数据，使用NDT算法对车辆进行定位和路径跟踪。&lt;/li&gt;&lt;li&gt;计算定位结果，生成和发布相关的ROS消息，如位姿、转换概率等。&lt;/li&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="270" y="520" width="490" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-32" value="stop_filter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="780" y="1090" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="qSpFAjaBa0g86qrWprOc-32">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1000" y="1180" as="sourcePoint" />
+            <mxPoint x="840" y="1260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-34" value="/localization/kinematic_state" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qSpFAjaBa0g86qrWprOc-33">
+          <mxGeometry x="-0.2909" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
