@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:126.0) Gecko/20100101 Firefox/126.0" version="24.7.12">
   <diagram name="Page-1" id="jYja321TO4npNnZUXKt9">
-    <mxGraphModel dx="1184" dy="691" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2476" dy="1445" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -273,22 +273,124 @@
         <mxCell id="qSpFAjaBa0g86qrWprOc-30" value="&lt;div style=&quot;font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;localization/pose_twist_fusion_filter/biased_pose_with_covariance&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1">
           <mxGeometry x="1150.0047368421056" y="420" as="geometry" />
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-31" value="&lt;li&gt;处理来自传感器的点云数据，使用NDT算法对车辆进行定位和路径跟踪。&lt;/li&gt;&lt;li&gt;计算定位结果，生成和发布相关的ROS消息，如位姿、转换概率等。&lt;/li&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="270" y="520" width="490" height="20" as="geometry" />
-        </mxCell>
         <mxCell id="qSpFAjaBa0g86qrWprOc-32" value="stop_filter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="780" y="1090" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="qSpFAjaBa0g86qrWprOc-32">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qSpFAjaBa0g86qrWprOc-32" target="qSpFAjaBa0g86qrWprOc-35">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1000" y="1180" as="sourcePoint" />
             <mxPoint x="840" y="1260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="840" y="1210" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="qSpFAjaBa0g86qrWprOc-34" value="/localization/kinematic_state" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qSpFAjaBa0g86qrWprOc-33">
           <mxGeometry x="-0.2909" y="1" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint x="182" y="-9" as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-35" value="obstacle_stop_planner" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1980" y="1180" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-36" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qSpFAjaBa0g86qrWprOc-35" target="qSpFAjaBa0g86qrWprOc-50">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1790" y="1110" as="sourcePoint" />
+            <mxPoint x="2410" y="1210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-37" value="/planning/scenario_planning/lane_driving/trajectory" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qSpFAjaBa0g86qrWprOc-36">
+          <mxGeometry x="-0.0757" relative="1" as="geometry">
+            <mxPoint x="23" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-38" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="qSpFAjaBa0g86qrWprOc-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1680.5" y="940" as="sourcePoint" />
+            <mxPoint x="1770" y="1210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1680" y="1150" />
+              <mxPoint x="1680" y="1210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-40" value="/perception/obstacle_segmentation/pointcloud" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qSpFAjaBa0g86qrWprOc-38">
+          <mxGeometry x="-0.0997" y="1" relative="1" as="geometry">
+            <mxPoint y="-22" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-41" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="qSpFAjaBa0g86qrWprOc-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1780" y="940" as="sourcePoint" />
+            <mxPoint x="1820" y="1070" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1780" y="1210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-42" value="/perception/object_recognition/objects" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qSpFAjaBa0g86qrWprOc-41">
+          <mxGeometry x="-0.4342" y="-1" relative="1" as="geometry">
+            <mxPoint x="1" y="67" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-43" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="qSpFAjaBa0g86qrWprOc-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1880" y="940" as="sourcePoint" />
+            <mxPoint x="1840" y="1060" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1880" y="1210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-44" value="&lt;div&gt;/planning/scenario_planning_lane_driving&lt;/div&gt;&lt;div&gt;/motion_planning/obstacle_avoidance_planner&lt;/div&gt;&lt;div&gt;/trajectory&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qSpFAjaBa0g86qrWprOc-43">
+          <mxGeometry x="-0.5292" y="1" relative="1" as="geometry">
+            <mxPoint x="19" y="63" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-45" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="qSpFAjaBa0g86qrWprOc-35">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2018" y="940" as="sourcePoint" />
+            <mxPoint x="1940" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-46" value="/localization/acceleration" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qSpFAjaBa0g86qrWprOc-45">
+          <mxGeometry x="-0.5101" y="2" relative="1" as="geometry">
+            <mxPoint x="-10" y="51" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-50" value="scenario_selector" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="2480" y="1180" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-51" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qSpFAjaBa0g86qrWprOc-50" target="qSpFAjaBa0g86qrWprOc-52">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2400" y="1200" as="sourcePoint" />
+            <mxPoint x="2890" y="1210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-53" value="/planning/scenario_planning/scenario_selector/trajectory" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qSpFAjaBa0g86qrWprOc-51">
+          <mxGeometry x="0.0686" y="1" relative="1" as="geometry">
+            <mxPoint y="-19" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-52" value="motion_velocity_smoother" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="3000" y="1180" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-54" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="qSpFAjaBa0g86qrWprOc-52" target="qSpFAjaBa0g86qrWprOc-55">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="3010" y="1130" as="sourcePoint" />
+            <mxPoint x="3360" y="1210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-56" value="/planning_scenario_planning/trajectory" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qSpFAjaBa0g86qrWprOc-54">
+          <mxGeometry x="0.1579" relative="1" as="geometry">
+            <mxPoint x="-22" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-55" value="simple_trajectory_follower" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="3480" y="1180" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-60" value="&lt;div&gt;使用NDT算法对车辆进行定位&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="480" y="500" width="240" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
