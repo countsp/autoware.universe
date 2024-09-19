@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:126.0) Gecko/20100101 Firefox/126.0" version="24.7.12">
   <diagram name="Page-1" id="jYja321TO4npNnZUXKt9">
-    <mxGraphModel dx="2095" dy="2323" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1009" dy="1689" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -431,16 +431,51 @@
         <mxCell id="qSpFAjaBa0g86qrWprOc-71" value="behavior_path_planner" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=0" vertex="1" parent="1">
           <mxGeometry x="2257.5" y="260" width="185" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="qSpFAjaBa0g86qrWprOc-74" target="qSpFAjaBa0g86qrWprOc-71">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="qSpFAjaBa0g86qrWprOc-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="qSpFAjaBa0g86qrWprOc-71">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1940" as="sourcePoint" />
+            <mxPoint x="2170" y="280" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1940" />
+              <mxPoint x="1940" y="290" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="qSpFAjaBa0g86qrWprOc-76" value="/occupancy_grip_map/map" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qSpFAjaBa0g86qrWprOc-75">
           <mxGeometry x="-0.0483" relative="1" as="geometry">
-            <mxPoint as="offset" />
+            <mxPoint y="-91" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-74" value="occupancy_grid_map_node" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=0" vertex="1" parent="1">
-          <mxGeometry x="2257.5" y="-80" width="185" height="60" as="geometry" />
+        <mxCell id="qSpFAjaBa0g86qrWprOc-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="qSpFAjaBa0g86qrWprOc-80" target="qSpFAjaBa0g86qrWprOc-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-82" value="/planning/mission_planning/route" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qSpFAjaBa0g86qrWprOc-81">
+          <mxGeometry x="-0.0755" relative="1" as="geometry">
+            <mxPoint x="21" y="-15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-80" value="mission_planner" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=0" vertex="1" parent="1">
+          <mxGeometry x="2020" y="-150" width="185" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-83" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.75;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="qSpFAjaBa0g86qrWprOc-80">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2159" y="-420" as="sourcePoint" />
+            <mxPoint x="2100" y="-60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-84" value="/modified_goal" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="qSpFAjaBa0g86qrWprOc-83">
+          <mxGeometry x="-0.441" y="1" relative="1" as="geometry">
+            <mxPoint y="74" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="qSpFAjaBa0g86qrWprOc-85" target="qSpFAjaBa0g86qrWprOc-80">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-85" value="vector_map" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="2006" y="-361" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="qSpFAjaBa0g86qrWprOc-87" value="&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;管理车辆的导航路线，可以清除、设置和更新路线。&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;发布当前路线的状态（未设置、已设置、已到达）&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;加载并初始化路线规划插件，该插件负责具体的路线生成逻辑。&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;div style=&quot;color: rgb(204, 204, 204); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-weight: normal; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot; color=&quot;#000000&quot;&gt;LaneletRoute route = planner_-&amp;gt;plan(points); //points包括起点终点途径点&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2240" y="-165" width="490" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
