@@ -1,27 +1,27 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:126.0) Gecko/20100101 Firefox/126.0" version="24.8.3">
   <diagram name="Page-1" id="jYja321TO4npNnZUXKt9">
-    <mxGraphModel dx="1513" dy="1983" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1703" dy="2094" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="ixGaKLChyozuG7cod_pc-1" value="pose_initializer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="ixGaKLChyozuG7cod_pc-1" value="pose_initializer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Helvetica;" parent="1" vertex="1">
           <mxGeometry x="360" y="380" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ixGaKLChyozuG7cod_pc-2" value="接收来自GNSS的粗略初始位姿&lt;div&gt;传递给ndt_scan_matcher&lt;/div&gt;&lt;div&gt;发送初始位姿给ekf_localizer&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="110" y="347.5" width="190" height="85" as="geometry" />
+          <mxGeometry x="165" y="347.5" width="190" height="85" as="geometry" />
         </mxCell>
-        <mxCell id="ixGaKLChyozuG7cod_pc-3" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="ixGaKLChyozuG7cod_pc-6" target="ixGaKLChyozuG7cod_pc-1" edge="1">
+        <mxCell id="ixGaKLChyozuG7cod_pc-3" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;" parent="1" source="ixGaKLChyozuG7cod_pc-6" target="ixGaKLChyozuG7cod_pc-1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="420" y="280" as="sourcePoint" />
             <mxPoint x="460" y="460" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ixGaKLChyozuG7cod_pc-4" value="/" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ixGaKLChyozuG7cod_pc-3" vertex="1" connectable="0">
+        <mxCell id="ixGaKLChyozuG7cod_pc-4" value="/" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;" parent="ixGaKLChyozuG7cod_pc-3" vertex="1" connectable="0">
           <mxGeometry x="0.0114" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ixGaKLChyozuG7cod_pc-5" value="&lt;div style=&quot;color: rgb(204, 204, 204); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;/sensing/gnss/pose_with_covariance&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ixGaKLChyozuG7cod_pc-3" vertex="1" connectable="0">
+        <mxCell id="ixGaKLChyozuG7cod_pc-5" value="&lt;div style=&quot;color: rgb(204, 204, 204); font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255);&quot;&gt;/sensing/gnss/pose_with_covariance&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;" parent="ixGaKLChyozuG7cod_pc-3" vertex="1" connectable="0">
           <mxGeometry x="0.0114" y="1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -29,7 +29,7 @@
         <mxCell id="ixGaKLChyozuG7cod_pc-6" value="gnss_poser" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" parent="1" vertex="1">
           <mxGeometry x="360" y="210" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ixGaKLChyozuG7cod_pc-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" edge="1">
+        <mxCell id="ixGaKLChyozuG7cod_pc-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1090" y="730" as="targetPoint" />
             <Array as="points">
@@ -44,7 +44,7 @@
             <mxPoint x="-2" y="-16" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ixGaKLChyozuG7cod_pc-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="ixGaKLChyozuG7cod_pc-8" target="qSpFAjaBa0g86qrWprOc-3" edge="1">
+        <mxCell id="ixGaKLChyozuG7cod_pc-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;" parent="1" source="ixGaKLChyozuG7cod_pc-8" target="qSpFAjaBa0g86qrWprOc-3" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1080" y="680" as="targetPoint" />
             <Array as="points">
@@ -53,18 +53,18 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ixGaKLChyozuG7cod_pc-29" value="&lt;div style=&quot;color: rgb(204, 204, 204); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-weight: normal; line-height: 19px; white-space: pre; font-size: 12px;&quot;&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot; color=&quot;#000000&quot;&gt;/localization/pose_estimator/pose_with_covariance&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;通过 NDT 匹配计算出的位姿，包含位置和方向信息，&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;以及与该位姿相关的协方差，表明位姿估计的不确定性。&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ixGaKLChyozuG7cod_pc-28" vertex="1" connectable="0">
+        <mxCell id="ixGaKLChyozuG7cod_pc-29" value="&lt;div style=&quot;color: rgb(204, 204, 204); font-weight: normal; line-height: 19px; white-space: pre; font-size: 12px;&quot;&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot; style=&quot;font-size: 12px;&quot;&gt;/localization/pose_estimator/pose_with_covariance&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;通过 NDT 匹配计算出的位姿，包含位置和方向信息，&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;以及与该位姿相关的协方差，表明位姿估计的不确定性。&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;" parent="ixGaKLChyozuG7cod_pc-28" vertex="1" connectable="0">
           <mxGeometry x="0.5951" y="2" relative="1" as="geometry">
             <mxPoint x="58" y="-97" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ixGaKLChyozuG7cod_pc-8" value="ndt_scan_matcher" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="ixGaKLChyozuG7cod_pc-8" value="ndt_scan_matcher" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Helvetica;" parent="1" vertex="1">
           <mxGeometry x="700" y="460" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ixGaKLChyozuG7cod_pc-11" value="&lt;div&gt;使用init_srv服务接收gnss的pose&lt;/div&gt;&lt;div&gt;状态变为INITIALIZING&lt;/div&gt;&lt;div&gt;调用ndt-&amp;gt;align_pose()，&lt;/div&gt;&lt;div&gt;pub_reset发布 /initialpose3d&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
-          <mxGeometry x="65" y="420" width="280" height="100" as="geometry" />
+          <mxGeometry x="120" y="410" width="280" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="ixGaKLChyozuG7cod_pc-16" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+        <mxCell id="ixGaKLChyozuG7cod_pc-16" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Helvetica;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="770" y="920" as="sourcePoint" />
             <mxPoint x="760" y="439" as="targetPoint" />
@@ -74,32 +74,23 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ixGaKLChyozuG7cod_pc-17" value="&lt;div style=&quot;font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;localization/pose_twist_fusion_filter/biased_pose_with_covariance&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ixGaKLChyozuG7cod_pc-16" vertex="1" connectable="0">
+        <mxCell id="ixGaKLChyozuG7cod_pc-17" value="&lt;div style=&quot;font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;localization/pose_twist_fusion_filter/biased_pose_with_covariance&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;" parent="ixGaKLChyozuG7cod_pc-16" vertex="1" connectable="0">
           <mxGeometry x="-0.3246" y="3" relative="1" as="geometry">
             <mxPoint x="29" y="-23" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ixGaKLChyozuG7cod_pc-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="ixGaKLChyozuG7cod_pc-18" target="ixGaKLChyozuG7cod_pc-8" edge="1">
+        <mxCell id="ixGaKLChyozuG7cod_pc-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;" parent="1" source="ixGaKLChyozuG7cod_pc-18" target="ixGaKLChyozuG7cod_pc-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="ixGaKLChyozuG7cod_pc-20" value="&lt;div style=&quot;color: rgb(204, 204, 204); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;/localization/util/downsample/pointcloud&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ixGaKLChyozuG7cod_pc-19" vertex="1" connectable="0">
+        <mxCell id="ixGaKLChyozuG7cod_pc-20" value="&lt;div style=&quot;color: rgb(204, 204, 204); font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;/localization/util/downsample/pointcloud&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;" parent="ixGaKLChyozuG7cod_pc-19" vertex="1" connectable="0">
           <mxGeometry x="-0.0152" y="2" relative="1" as="geometry">
             <mxPoint x="48" y="-19" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ixGaKLChyozuG7cod_pc-18" value="&lt;div&gt;random_downsample_filter&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="ixGaKLChyozuG7cod_pc-18" value="&lt;div&gt;random_downsample_filter&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Helvetica;" parent="1" vertex="1">
           <mxGeometry x="660" y="240" width="200" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="ixGaKLChyozuG7cod_pc-21" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" target="ixGaKLChyozuG7cod_pc-8" edge="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1230" y="505" as="sourcePoint" />
-            <mxPoint x="970" y="490" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="1030" y="505" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="ixGaKLChyozuG7cod_pc-24" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="ixGaKLChyozuG7cod_pc-8" edge="1">
+        <mxCell id="ixGaKLChyozuG7cod_pc-24" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;" parent="1" source="ixGaKLChyozuG7cod_pc-8" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="760" y="550" as="sourcePoint" />
             <mxPoint x="500" y="700" as="targetPoint" />
@@ -109,12 +100,12 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ixGaKLChyozuG7cod_pc-25" value="&lt;div&gt;/points_aligned&lt;/div&gt;ndt匹配输出的点云，frame为map" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ixGaKLChyozuG7cod_pc-24" vertex="1" connectable="0">
+        <mxCell id="ixGaKLChyozuG7cod_pc-25" value="&lt;div&gt;/points_aligned&lt;/div&gt;ndt匹配输出的点云，frame为map" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;" parent="ixGaKLChyozuG7cod_pc-24" vertex="1" connectable="0">
           <mxGeometry x="-0.0339" y="2" relative="1" as="geometry">
             <mxPoint x="-118" y="48" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ixGaKLChyozuG7cod_pc-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" edge="1">
+        <mxCell id="ixGaKLChyozuG7cod_pc-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1280" y="730" as="targetPoint" />
             <mxPoint x="760" y="550" as="sourcePoint" />
@@ -125,15 +116,15 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ixGaKLChyozuG7cod_pc-34" value="&lt;div style=&quot;color: rgb(204, 204, 204); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;/initial_pose_with_covariance&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;插值后的位姿&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ixGaKLChyozuG7cod_pc-33" vertex="1" connectable="0">
+        <mxCell id="ixGaKLChyozuG7cod_pc-34" value="&lt;div style=&quot;color: rgb(204, 204, 204); font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;/initial_pose_with_covariance&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;插值后的位姿&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;" parent="ixGaKLChyozuG7cod_pc-33" vertex="1" connectable="0">
           <mxGeometry x="0.5951" y="2" relative="1" as="geometry">
             <mxPoint x="-7" y="82" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-3" value="ekf_localizer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-3" value="ekf_localizer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Helvetica;" parent="1" vertex="1">
           <mxGeometry x="700" y="830" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="ixGaKLChyozuG7cod_pc-1" target="qSpFAjaBa0g86qrWprOc-3" edge="1">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;" parent="1" source="ixGaKLChyozuG7cod_pc-1" target="qSpFAjaBa0g86qrWprOc-3" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="880" y="630" as="sourcePoint" />
             <mxPoint x="930" y="580" as="targetPoint" />
@@ -144,12 +135,12 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-5" value="&lt;div&gt;/initialpose3d&lt;/div&gt;&lt;div&gt;这个话题通常用于提供机器人在某一时刻的初始位姿，通常只会发送一次。&lt;/div&gt;&lt;div&gt;在 &lt;code&gt;EKFLocalizer&lt;/code&gt; 中，&lt;code&gt;callbackInitialPose&lt;/code&gt; 会被调用来处理这个位姿。&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="qSpFAjaBa0g86qrWprOc-4" vertex="1" connectable="0">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-5" value="&lt;div&gt;/initialpose3d&lt;/div&gt;&lt;div&gt;这个话题通常用于提供机器人在某一时刻的初始位姿，通常只会发送一次。&lt;/div&gt;&lt;div&gt;在 &lt;code&gt;EKFLocalizer&lt;/code&gt; 中，&lt;code&gt;callbackInitialPose&lt;/code&gt; 会被调用来处理这个位姿。&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;" parent="qSpFAjaBa0g86qrWprOc-4" vertex="1" connectable="0">
           <mxGeometry x="0.3493" y="-1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-8" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="qSpFAjaBa0g86qrWprOc-10" target="qSpFAjaBa0g86qrWprOc-3" edge="1">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-8" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;" parent="1" source="qSpFAjaBa0g86qrWprOc-10" target="qSpFAjaBa0g86qrWprOc-3" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="1110" y="860" as="sourcePoint" />
             <mxPoint x="1120" y="720" as="targetPoint" />
@@ -158,18 +149,18 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-9" value="&lt;div style=&quot;color: rgb(204, 204, 204); font-weight: normal; font-size: 10px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font color=&quot;#000000&quot; face=&quot;Helvetica&quot; style=&quot;font-size: 10px;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 10px;&quot;&gt;/localization/twist_estimator/twist_with_covariance&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" parent="qSpFAjaBa0g86qrWprOc-8" vertex="1" connectable="0">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-9" value="&lt;div style=&quot;color: rgb(204, 204, 204); font-weight: normal; font-size: 10px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div style=&quot;font-size: 10px;&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot; color=&quot;#000000&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); font-size: 10px;&quot;&gt;/localization/twist_estimator/twist_with_covariance&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;fontFamily=Helvetica;" parent="qSpFAjaBa0g86qrWprOc-8" vertex="1" connectable="0">
           <mxGeometry x="-0.2241" y="1" relative="1" as="geometry">
             <mxPoint x="69" y="-171" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-10" value="gyro_odometer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-10" value="gyro_odometer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Helvetica;" parent="1" vertex="1">
           <mxGeometry x="1500" y="460" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-12" value="&lt;div&gt;设置一个定时器来周期性地调用预测和更新函数&lt;/div&gt;&lt;div&gt;timer_control_ = rclcpp::&lt;span class=&quot;hljs-built_in&quot;&gt;create_timer&lt;/span&gt;(&lt;/div&gt;    &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;, &lt;span class=&quot;hljs-built_in&quot;&gt;get_clock&lt;/span&gt;(), rclcpp::Duration::&lt;span class=&quot;hljs-built_in&quot;&gt;from_seconds&lt;/span&gt;(ekf_dt_),&lt;br&gt;&lt;div&gt;    std::&lt;span class=&quot;hljs-built_in&quot;&gt;bind&lt;/span&gt;(&amp;amp;EKFLocalizer::timerCallback, &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;));&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;发布了map到base_link的tf&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-12" value="&lt;div&gt;设置一个定时器来周期性地调用预测和更新函数&lt;/div&gt;&lt;div&gt;timer_control_ = rclcpp::&lt;span class=&quot;hljs-built_in&quot;&gt;create_timer&lt;/span&gt;(&lt;/div&gt;    &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;, &lt;span class=&quot;hljs-built_in&quot;&gt;get_clock&lt;/span&gt;(), rclcpp::Duration::&lt;span class=&quot;hljs-built_in&quot;&gt;from_seconds&lt;/span&gt;(ekf_dt_),&lt;br&gt;&lt;div&gt;    std::&lt;span class=&quot;hljs-built_in&quot;&gt;bind&lt;/span&gt;(&amp;amp;EKFLocalizer::timerCallback, &lt;span class=&quot;hljs-keyword&quot;&gt;this&lt;/span&gt;));&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;发布了map到base_link的tf&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Helvetica;" parent="1" vertex="1">
           <mxGeometry x="180" y="760" width="490" height="210" as="geometry" />
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="qSpFAjaBa0g86qrWprOc-3" edge="1">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;" parent="1" source="qSpFAjaBa0g86qrWprOc-3" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="650" y="890" as="sourcePoint" />
             <mxPoint x="460" y="1050" as="targetPoint" />
@@ -180,23 +171,23 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-14" value="localization/pose_twist_fusion_filter/pose" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="qSpFAjaBa0g86qrWprOc-13" vertex="1" connectable="0">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-14" value="localization/pose_twist_fusion_filter/pose" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;" parent="qSpFAjaBa0g86qrWprOc-13" vertex="1" connectable="0">
           <mxGeometry x="0.0958" y="2" relative="1" as="geometry">
             <mxPoint x="-54" y="38" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" edge="1">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="750" y="890" as="sourcePoint" />
             <mxPoint x="750" y="990" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-16" value="&lt;div style=&quot;font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-weight: normal; line-height: 19px; white-space: pre; font-size: 13px;&quot;&gt;&lt;div&gt;&lt;font color=&quot;#999999&quot; style=&quot;font-size: 10px;&quot;&gt;/localization/pose_with_covariance&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="qSpFAjaBa0g86qrWprOc-15" vertex="1" connectable="0">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-16" value="&lt;div style=&quot;font-weight: normal; line-height: 19px; white-space: pre; font-size: 13px;&quot;&gt;&lt;div&gt;&lt;font style=&quot;font-size: 10px;&quot; color=&quot;#999999&quot;&gt;/localization/pose_with_covariance&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;" parent="qSpFAjaBa0g86qrWprOc-15" vertex="1" connectable="0">
           <mxGeometry x="0.0958" y="2" relative="1" as="geometry">
             <mxPoint x="-52" y="12" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.59;exitY=1.004;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="qSpFAjaBa0g86qrWprOc-3" target="qSpFAjaBa0g86qrWprOc-32" edge="1">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-17" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.59;exitY=1.004;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;" parent="1" source="qSpFAjaBa0g86qrWprOc-3" target="qSpFAjaBa0g86qrWprOc-32" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="770" y="890" as="sourcePoint" />
             <mxPoint x="840" y="1050" as="targetPoint" />
@@ -206,12 +197,12 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-18" value="localization/pose_twist_fusion_filter/kinematic_state" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="qSpFAjaBa0g86qrWprOc-17" vertex="1" connectable="0">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-18" value="localization/pose_twist_fusion_filter/kinematic_state" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;" parent="qSpFAjaBa0g86qrWprOc-17" vertex="1" connectable="0">
           <mxGeometry x="0.0958" y="2" relative="1" as="geometry">
             <mxPoint x="-2" y="34" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="qSpFAjaBa0g86qrWprOc-3" edge="1">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-19" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;fontFamily=Helvetica;" parent="1" source="qSpFAjaBa0g86qrWprOc-3" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="630" y="890" as="sourcePoint" />
             <mxPoint x="360" y="1000" as="targetPoint" />
@@ -223,12 +214,12 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-20" value="&lt;font color=&quot;#999999&quot;&gt;localization/pose_twist_fusion_filter/twist&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="qSpFAjaBa0g86qrWprOc-19" vertex="1" connectable="0">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-20" value="&lt;font color=&quot;#999999&quot;&gt;localization/pose_twist_fusion_filter/twist&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;" parent="qSpFAjaBa0g86qrWprOc-19" vertex="1" connectable="0">
           <mxGeometry x="0.0958" y="2" relative="1" as="geometry">
             <mxPoint x="-150" y="78" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.585;exitY=0.999;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="qSpFAjaBa0g86qrWprOc-3" edge="1">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-21" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.585;exitY=0.999;exitDx=0;exitDy=0;exitPerimeter=0;fontFamily=Helvetica;" parent="1" source="qSpFAjaBa0g86qrWprOc-3" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="770" y="890" as="sourcePoint" />
             <mxPoint x="930" y="990" as="targetPoint" />
@@ -238,12 +229,12 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-22" value="&lt;font color=&quot;#999999&quot;&gt;/&lt;font style=&quot;white-space: pre;&quot; size=&quot;1&quot;&gt;&lt;span style=&quot;&quot;&gt;twist_with_covariance&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;" parent="qSpFAjaBa0g86qrWprOc-21" vertex="1" connectable="0">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-22" value="&lt;font color=&quot;#999999&quot;&gt;/&lt;font size=&quot;1&quot; style=&quot;white-space: pre;&quot;&gt;&lt;span style=&quot;&quot;&gt;twist_with_covariance&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontFamily=Helvetica;" parent="qSpFAjaBa0g86qrWprOc-21" vertex="1" connectable="0">
           <mxGeometry x="0.4352" y="1" relative="1" as="geometry">
             <mxPoint x="9" y="36" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-25" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.585;exitY=1.002;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="qSpFAjaBa0g86qrWprOc-3" edge="1">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-25" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.585;exitY=1.002;exitDx=0;exitDy=0;exitPerimeter=0;fontFamily=Helvetica;" parent="1" source="qSpFAjaBa0g86qrWprOc-3" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="770.8000000000002" y="886.7199999999998" as="sourcePoint" />
             <mxPoint x="1020" y="990" as="targetPoint" />
@@ -253,15 +244,15 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-26" value="&lt;font&gt;/biased_pose&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontColor=#999999;" parent="qSpFAjaBa0g86qrWprOc-25" vertex="1" connectable="0">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-26" value="&lt;font&gt;/biased_pose&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=none;fontColor=#999999;fontFamily=Helvetica;" parent="qSpFAjaBa0g86qrWprOc-25" vertex="1" connectable="0">
           <mxGeometry x="0.4352" y="1" relative="1" as="geometry">
             <mxPoint x="39" y="41" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-30" value="&lt;div style=&quot;font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;localization/pose_twist_fusion_filter/biased_pose_with_covariance&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1" vertex="1" connectable="0">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-30" value="&lt;div style=&quot;font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;font&gt;localization/pose_twist_fusion_filter/biased_pose_with_covariance&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;" parent="1" vertex="1" connectable="0">
           <mxGeometry x="1170.0047368421056" y="450" as="geometry" />
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-32" value="stop_filter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-32" value="stop_filter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Helvetica;" parent="1" vertex="1">
           <mxGeometry x="780" y="1090" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="qSpFAjaBa0g86qrWprOc-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="qSpFAjaBa0g86qrWprOc-32" target="qSpFAjaBa0g86qrWprOc-35" edge="1">
@@ -273,7 +264,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-34" value="/localization/kinematic_state" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="qSpFAjaBa0g86qrWprOc-33" vertex="1" connectable="0">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-34" value="/localization/kinematic_state" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;" parent="qSpFAjaBa0g86qrWprOc-33" vertex="1" connectable="0">
           <mxGeometry x="-0.2909" y="1" relative="1" as="geometry">
             <mxPoint x="182" y="-9" as="offset" />
           </mxGeometry>
@@ -367,8 +358,8 @@
         <mxCell id="qSpFAjaBa0g86qrWprOc-55" value="simple_trajectory_follower" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="3950" y="1175" width="200" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-60" value="&lt;div&gt;使用NDT算法对车辆进行定位&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="640" y="520" width="240" height="20" as="geometry" />
+        <mxCell id="qSpFAjaBa0g86qrWprOc-60" value="&lt;div&gt;使用NDT算法对车辆进行定位&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;align=center;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="740" y="525" width="240" height="20" as="geometry" />
         </mxCell>
         <mxCell id="qSpFAjaBa0g86qrWprOc-61" value="obstacle_avoidance_planner" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="2240" y="830" width="220" height="60" as="geometry" />
@@ -515,13 +506,13 @@
         <mxCell id="llkuZcJW62Sf3VIq-Laf-12" value="&lt;ul&gt;&lt;li&gt;订阅当前的轨迹信息，并在定时器回调中进行处理。&lt;/li&gt;&lt;li&gt;更新与自车当前位姿最接近的轨迹点。&lt;/li&gt;&lt;li&gt;计算基于最近轨迹点的转向和加速命令。&lt;/li&gt;&lt;li&gt;最后将控制命令发布到相应的控制主题。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;这一流程确保了车辆能够根据当前的运动状态和目标轨迹进行平滑的跟随和控制。&lt;/p&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="3930" y="1250" width="470" height="140" as="geometry" />
         </mxCell>
-        <mxCell id="llkuZcJW62Sf3VIq-Laf-15" value="&lt;strong&gt;提高匹配精度&lt;/strong&gt;: 在进行 NDT 匹配时，初始位姿可以提供一个合理的猜测，减少算法收敛所需的迭代次数。特别是在环境变化较大或起始位置较远的情况下，良好的初始位姿可以显著提高匹配的成功率。" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="llkuZcJW62Sf3VIq-Laf-15" value="在进行 NDT 匹配时，初始位姿可以提供一个合理的猜测，减少算法收敛所需的迭代次数。特别是在环境变化较大或起始位置较远的情况下，良好的初始位姿可以显著提高匹配的成功率。" style="text;whiteSpace=wrap;html=1;fontFamily=Helvetica;" vertex="1" parent="1">
           <mxGeometry x="850" y="400" width="560" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="llkuZcJW62Sf3VIq-Laf-17" value="&lt;div style=&quot;font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-weight: normal; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;GPS 位姿作为 NDT匹配的初始估计。&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;li&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;正则化位姿是用来提供先验信息的参数，&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;旨在改善NDT算法在点云匹配过程中的收敛性和鲁棒性。&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;通过将正则化位姿作为参考，&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;NDT可以在配准时减少对噪声和数据不确定性的敏感性。&lt;/font&gt;&lt;/li&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="llkuZcJW62Sf3VIq-Laf-17" value="&lt;div style=&quot;font-weight: normal; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;GPS 位姿作为 NDT匹配的初始估计。&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 11px;&quot;&gt;&lt;li&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;正则化位姿是用来提供先验信息的参数，&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;旨在改善NDT算法在点云匹配过程中的收敛性和鲁棒性。&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;通过将正则化位姿作为参考，&lt;/font&gt;&lt;/li&gt;&lt;li&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;NDT可以在配准时减少对噪声和数据不确定性的敏感性。&lt;/font&gt;&lt;/li&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;fontFamily=Helvetica;" vertex="1" parent="1">
           <mxGeometry x="510" y="370" width="320" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="llkuZcJW62Sf3VIq-Laf-22" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="ixGaKLChyozuG7cod_pc-8">
+        <mxCell id="llkuZcJW62Sf3VIq-Laf-22" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;" edge="1" parent="1" target="ixGaKLChyozuG7cod_pc-8">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="420" y="300" as="sourcePoint" />
             <mxPoint x="720" y="540" as="targetPoint" />
