@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:126.0) Gecko/20100101 Firefox/126.0" version="24.8.3">
   <diagram name="Page-1" id="jYja321TO4npNnZUXKt9">
-    <mxGraphModel dx="1222" dy="2918" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="548" dy="1915" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -31,12 +31,12 @@
         </mxCell>
         <mxCell id="ixGaKLChyozuG7cod_pc-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1100" y="700" as="targetPoint" />
+            <mxPoint x="1090" y="730" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="1100" y="610" />
-              <mxPoint x="1100" y="610" />
+              <mxPoint x="1090" y="640" />
+              <mxPoint x="1090" y="640" />
             </Array>
-            <mxPoint x="1100" y="550" as="sourcePoint" />
+            <mxPoint x="1090" y="580" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ixGaKLChyozuG7cod_pc-27" value="&lt;div&gt;/ndt_pose&lt;/div&gt;发布ndt匹配结果pose" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=none;gradientColor=none;" parent="ixGaKLChyozuG7cod_pc-26" vertex="1" connectable="0">
@@ -87,7 +87,7 @@
             <mxPoint y="-19" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ixGaKLChyozuG7cod_pc-18" value="LIDAR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="ixGaKLChyozuG7cod_pc-18" value="LIDAR" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="700" y="240" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ixGaKLChyozuG7cod_pc-21" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" target="ixGaKLChyozuG7cod_pc-8" edge="1">
@@ -101,7 +101,7 @@
         </mxCell>
         <mxCell id="ixGaKLChyozuG7cod_pc-22" value="&lt;div style=&quot;font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;/sensing/gnss/pose_with_covariance&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ixGaKLChyozuG7cod_pc-21" vertex="1" connectable="0">
           <mxGeometry x="0.1004" y="-2" relative="1" as="geometry">
-            <mxPoint x="36" y="-13" as="offset" />
+            <mxPoint x="45" y="-13" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="ixGaKLChyozuG7cod_pc-24" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="ixGaKLChyozuG7cod_pc-8" edge="1">
@@ -121,12 +121,12 @@
         </mxCell>
         <mxCell id="ixGaKLChyozuG7cod_pc-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" edge="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1280" y="700" as="targetPoint" />
-            <mxPoint x="760" y="520" as="sourcePoint" />
+            <mxPoint x="1280" y="730" as="targetPoint" />
+            <mxPoint x="760" y="550" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="760" y="550" />
-              <mxPoint x="1280" y="550" />
-              <mxPoint x="1280" y="690" />
+              <mxPoint x="760" y="580" />
+              <mxPoint x="1280" y="580" />
+              <mxPoint x="1280" y="720" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -372,7 +372,7 @@
           <mxGeometry x="3950" y="1175" width="200" height="60" as="geometry" />
         </mxCell>
         <mxCell id="qSpFAjaBa0g86qrWprOc-60" value="&lt;div&gt;使用NDT算法对车辆进行定位&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="640" y="520" width="240" height="40" as="geometry" />
+          <mxGeometry x="640" y="520" width="240" height="20" as="geometry" />
         </mxCell>
         <mxCell id="qSpFAjaBa0g86qrWprOc-61" value="obstacle_avoidance_planner" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="2240" y="830" width="220" height="60" as="geometry" />
@@ -521,6 +521,9 @@
         </mxCell>
         <mxCell id="llkuZcJW62Sf3VIq-Laf-15" value="&lt;strong&gt;提高匹配精度&lt;/strong&gt;: 在进行 NDT 匹配时，初始位姿可以提供一个合理的猜测，减少算法收敛所需的迭代次数。特别是在环境变化较大或起始位置较远的情况下，良好的初始位姿可以显著提高匹配的成功率。" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="850" y="400" width="560" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="llkuZcJW62Sf3VIq-Laf-17" value="&lt;div style=&quot;font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;GPS 位姿作为 NDT（Normal Distributions Transform）匹配的初始估计。&lt;/div&gt;&lt;div&gt;&lt;li&gt;正则化位姿是用来提供先验信息的参数，旨在改善NDT算法在点云匹配过程中的收敛性和鲁棒性。&lt;/li&gt;&lt;li&gt;通过将正则化位姿作为参考，NDT可以在配准时减少对噪声和数据不确定性的敏感性。&lt;/li&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="505" width="1140" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
