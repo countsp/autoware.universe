@@ -1,17 +1,9 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:126.0) Gecko/20100101 Firefox/126.0" version="24.8.3">
   <diagram name="Page-1" id="jYja321TO4npNnZUXKt9">
-    <mxGraphModel dx="662" dy="2085" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1222" dy="2918" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="ixGaKLChyozuG7cod_pc-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="ixGaKLChyozuG7cod_pc-1" target="ixGaKLChyozuG7cod_pc-8" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="ixGaKLChyozuG7cod_pc-10" value="/initialpose3d" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontFamily=Helvetica;fontSize=11;fontColor=default;labelBackgroundColor=default;fillColor=none;gradientColor=none;" parent="ixGaKLChyozuG7cod_pc-9" vertex="1" connectable="0">
-          <mxGeometry y="1" relative="1" as="geometry">
-            <mxPoint x="49" y="30" as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="ixGaKLChyozuG7cod_pc-1" value="pose_initializer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="360" y="380" width="120" height="60" as="geometry" />
         </mxCell>
@@ -61,7 +53,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="ixGaKLChyozuG7cod_pc-29" value="&lt;div style=&quot;color: rgb(204, 204, 204); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;/localization/pose_estimator/pose_with_covariance&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;发布ndt匹配结果pose_with_covariance&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ixGaKLChyozuG7cod_pc-28" vertex="1" connectable="0">
+        <mxCell id="ixGaKLChyozuG7cod_pc-29" value="&lt;div style=&quot;color: rgb(204, 204, 204); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-weight: normal; line-height: 19px; white-space: pre; font-size: 12px;&quot;&gt;&lt;div&gt;&lt;font style=&quot;font-size: 12px;&quot; color=&quot;#000000&quot;&gt;/localization/pose_estimator/pose_with_covariance&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;通过 NDT 匹配计算出的位姿，包含位置和方向信息，&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 12px;&quot;&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;以及与该位姿相关的协方差，表明位姿估计的不确定性。&lt;/font&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ixGaKLChyozuG7cod_pc-28" vertex="1" connectable="0">
           <mxGeometry x="0.5951" y="2" relative="1" as="geometry">
             <mxPoint x="58" y="-97" as="offset" />
           </mxGeometry>
@@ -95,7 +87,7 @@
             <mxPoint y="-19" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="ixGaKLChyozuG7cod_pc-18" value="ndt_scan_matcher" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+        <mxCell id="ixGaKLChyozuG7cod_pc-18" value="LIDAR" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="700" y="240" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="ixGaKLChyozuG7cod_pc-21" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" target="ixGaKLChyozuG7cod_pc-8" edge="1">
@@ -140,7 +132,7 @@
         </mxCell>
         <mxCell id="ixGaKLChyozuG7cod_pc-34" value="&lt;div style=&quot;color: rgb(204, 204, 204); font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;&lt;font color=&quot;#000000&quot;&gt;/initial_pose_with_covariance&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;插值后的位姿&lt;br&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="ixGaKLChyozuG7cod_pc-33" vertex="1" connectable="0">
           <mxGeometry x="0.5951" y="2" relative="1" as="geometry">
-            <mxPoint x="28" y="72" as="offset" />
+            <mxPoint x="-7" y="82" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="qSpFAjaBa0g86qrWprOc-3" value="ekf_localizer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
@@ -156,7 +148,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="qSpFAjaBa0g86qrWprOc-5" value="/initialpose3d" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="qSpFAjaBa0g86qrWprOc-4" vertex="1" connectable="0">
+        <mxCell id="qSpFAjaBa0g86qrWprOc-5" value="&lt;div&gt;/initialpose3d&lt;/div&gt;&lt;div&gt;这个话题通常用于提供机器人在某一时刻的初始位姿，通常只会发送一次。&lt;/div&gt;&lt;div&gt;在 &lt;code&gt;EKFLocalizer&lt;/code&gt; 中，&lt;code&gt;callbackInitialPose&lt;/code&gt; 会被调用来处理这个位姿。&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="qSpFAjaBa0g86qrWprOc-4" vertex="1" connectable="0">
           <mxGeometry x="0.3493" y="-1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
@@ -271,7 +263,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="qSpFAjaBa0g86qrWprOc-30" value="&lt;div style=&quot;font-family: &amp;quot;Droid Sans Mono&amp;quot;, &amp;quot;monospace&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px; white-space: pre;&quot;&gt;&lt;div&gt;localization/pose_twist_fusion_filter/biased_pose_with_covariance&lt;/div&gt;&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="1150.0047368421056" y="420" as="geometry" />
+          <mxGeometry x="1170.0047368421056" y="450" as="geometry" />
         </mxCell>
         <mxCell id="qSpFAjaBa0g86qrWprOc-32" value="stop_filter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="780" y="1090" width="120" height="60" as="geometry" />
@@ -380,7 +372,7 @@
           <mxGeometry x="3950" y="1175" width="200" height="60" as="geometry" />
         </mxCell>
         <mxCell id="qSpFAjaBa0g86qrWprOc-60" value="&lt;div&gt;使用NDT算法对车辆进行定位&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;align=center;" parent="1" vertex="1">
-          <mxGeometry x="480" y="500" width="240" height="40" as="geometry" />
+          <mxGeometry x="640" y="520" width="240" height="40" as="geometry" />
         </mxCell>
         <mxCell id="qSpFAjaBa0g86qrWprOc-61" value="obstacle_avoidance_planner" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
           <mxGeometry x="2240" y="830" width="220" height="60" as="geometry" />
@@ -494,6 +486,41 @@
         </mxCell>
         <mxCell id="llkuZcJW62Sf3VIq-Laf-4" value="路径点集合" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="2390" y="380" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="llkuZcJW62Sf3VIq-Laf-5" value="&lt;li&gt;&lt;strong&gt;行驶方向检查&lt;/strong&gt;：检查输入路径的行驶方向（是否支持向后行驶）。&lt;/li&gt;&lt;li&gt;&lt;strong&gt;路径速度规划&lt;/strong&gt;：调用 &lt;code&gt;planner_manager_.planPathVelocity&lt;/code&gt; 方法，规划路径的速度。&lt;/li&gt;&lt;li&gt;&lt;strong&gt;路径过滤与插值&lt;/strong&gt;：过滤冗余的路径点，并使用插值方法生成平滑的路径。&lt;/li&gt;&lt;li&gt;&lt;strong&gt;输出路径&lt;/strong&gt;：设置输出路径的相关属性（如时间戳和坐标系），并返回。&lt;/li&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2500" y="540" width="520" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="llkuZcJW62Sf3VIq-Laf-6" value="&lt;li&gt;接收路径信息。&lt;/li&gt;&lt;li&gt;创建 &lt;code&gt;PlannerData&lt;/code&gt;，包括当前路径、位置、速度和障碍物信息。&lt;/li&gt;&lt;li&gt;生成优化的轨迹，包括行驶方向检查和后处理步骤。&lt;/li&gt;&lt;li&gt;最后将生成的轨迹发布到 &lt;code&gt;~/output/path&lt;/code&gt; 主题，供系统中的其他模块使用。&lt;/li&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2500" y="820" width="450" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="llkuZcJW62Sf3VIq-Laf-7" value="&lt;li&gt;接收轨迹信息并进行有效性检查。&lt;/li&gt;&lt;li&gt;根据自车位置裁剪、扩展和降采样轨迹。&lt;/li&gt;&lt;li&gt;搜索障碍物并插入相应的减速段或停止点。&lt;/li&gt;&lt;li&gt;最后将处理后的轨迹信息发布给其他节点使用。&lt;/li&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2450" y="1250" width="290" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="llkuZcJW62Sf3VIq-Laf-8" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="qSpFAjaBa0g86qrWprOc-50">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="2600" y="1440" as="sourcePoint" />
+            <mxPoint x="2960" y="1215" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2950" y="1440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="llkuZcJW62Sf3VIq-Laf-9" value="/planning/scenario_planning/parking/trajectory" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="llkuZcJW62Sf3VIq-Laf-8">
+          <mxGeometry x="-0.0757" relative="1" as="geometry">
+            <mxPoint x="-100" y="-20" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="llkuZcJW62Sf3VIq-Laf-10" value="&lt;li&gt;订阅和处理车道驾驶及停车的轨迹信息。&lt;/li&gt;&lt;li&gt;根据当前场景和车辆状态发布相应的轨迹。&lt;/li&gt;&lt;li&gt;根据轨迹状态和位置选择合适的场景，更新当前场景的逻辑。&lt;/li&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2970" y="1270" width="360" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="llkuZcJW62Sf3VIq-Laf-11" value="&lt;li&gt;订阅当前轨迹并处理接收到的轨迹数据。&lt;/li&gt;&lt;li&gt;计算轨迹的速度，应用外部速度限制和停止接近速度的策略。&lt;/li&gt;&lt;li&gt;平滑轨迹速度并生成输出轨迹。&lt;/li&gt;&lt;li&gt;最后，发布处理后的轨迹消息供后续节点使用。&lt;/li&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3450" y="1260" width="360" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="llkuZcJW62Sf3VIq-Laf-12" value="&lt;ul&gt;&lt;li&gt;订阅当前的轨迹信息，并在定时器回调中进行处理。&lt;/li&gt;&lt;li&gt;更新与自车当前位姿最接近的轨迹点。&lt;/li&gt;&lt;li&gt;计算基于最近轨迹点的转向和加速命令。&lt;/li&gt;&lt;li&gt;最后将控制命令发布到相应的控制主题。&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;这一流程确保了车辆能够根据当前的运动状态和目标轨迹进行平滑的跟随和控制。&lt;/p&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3930" y="1250" width="470" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="llkuZcJW62Sf3VIq-Laf-15" value="&lt;strong&gt;提高匹配精度&lt;/strong&gt;: 在进行 NDT 匹配时，初始位姿可以提供一个合理的猜测，减少算法收敛所需的迭代次数。特别是在环境变化较大或起始位置较远的情况下，良好的初始位姿可以显著提高匹配的成功率。" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="400" width="560" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
