@@ -68,6 +68,16 @@ sudo sh -c 'echo "deb [trusted=yes] https://s3.amazonaws.com/autonomoustuff-repo
 sudo apt update
 sudo apt install ros-galactic-pacmod3
 ```
+
+``` ubuntu 22.04
+wget -O /tmp/amd64.env https://raw.githubusercontent.com/autowarefoundation/autoware/main/amd64.env && source /tmp/amd64.env
+
+# Taken from https://github.com/astuff/pacmod3#installation
+sudo apt install apt-transport-https
+sudo sh -c 'echo "deb [trusted=yes] https://s3.amazonaws.com/autonomoustuff-repo/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/autonomoustuff-public.list'
+sudo apt update
+sudo apt install ros-${rosdistro}-pacmod3
+```
 ##### Install Autoware Core dependencies
 ```
 pip3 install gdown
