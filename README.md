@@ -339,3 +339,25 @@ ament_auto_package(INSTALL_TO_SHARE
   config
 )
 ```
+# angles error
+
+![Screenshot from 2025-02-27 23-59-16](https://github.com/user-attachments/assets/913c8903-8866-47bf-921b-f943d60cfe7c)
+
+/home/rsp4070tis/autoware/src/sensor_component/external/nebula/nebula_decoders/CMakeLists.txt
+
+at the end of 
+```
+include_directories(
+        include
+        SYSTEM
+        ${YAML_CPP_INCLUDE_DIRS}
+        ${PCL_INCLUDE_DIRS}
+        ${PCL_COMMON_INCLUDE_DIRS}
+)
+```
+add
+
+
+```
+include_directories(/opt/ros/humble/include)
+```
